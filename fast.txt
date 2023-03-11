@@ -1,0 +1,32 @@
+idea快捷键
+Ctrl + F	在当前文件进行文本查找
+Ctrl + R	在当前文件进行文本替换
+Ctrl + Y	删除光标所在行 或 删除选中的行
+Ctrl + H	显示当前类的层次结构
+Ctrl + O	选择可重写/实现的方法
+Ctrl + I	选择可实现的方法
+Ctrl + \  基础代码补全
+Ctrl + F12 查看类中的方法清单
+Alt + Insert 快速生成构造方法
+Ctrl + Alt + U 查看类图
+Ctrl + Alt + O 整理导包
+Ctrl + Alt + T	对选中的代码弹出环绕选项弹出层
+Ctrl + Alt + L	格式化代码，可以对当前文件和整个包目录使用
+Ctrl + P	方法参数提示显示
+
+网页快捷键
+ctrl+tab 		网页标签页切换，左标签向右切换，
+ctrl+shift+tab 	右边向左切换。
+
+Windows快捷键
+win+tab		切出所有窗口
+alt+tab		窗口切换，左窗口往右切换，
+alt+shift+tab	右窗口往左切换。
+
+Windows cmd快捷键
+Ctrl+L 	清空命令行
+
+外网面板地址: http://116.205.227.164:25824/07e5681d
+内网面板地址: http://192.168.0.27:25824/07e5681d
+username: kojuh95w
+password: bcbc64ff
