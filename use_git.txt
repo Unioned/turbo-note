@@ -1,0 +1,11 @@
+…初始化仓库再进行提交
+echo # MyFirstGitProject >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin [这里填写远程仓库路径，例如：https://github.com/waitForWind/MyFirstGitProject.git]
+git push -u origin master
+
+…提交到已经存在的仓库
+git remote add origin [这里填写远程仓库路径，例如：https://github.com/waitForWind/MyFirstGitProject.git]
+git push -u origin master
