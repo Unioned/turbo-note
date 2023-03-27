@@ -23,3 +23,24 @@
 	C:\Users\$用户名\AppData\Roaming\Code
 	【注】这里的“$用户名”根据自己的用户名而定。
 	删除掉这两个目录的内容之后，如果再安装VSCode的话，就相当于是全新安装了，即不会出现之前的相关配置信息了。
+5.常规本地的学习用虚拟机可以设置静态ip，
+	1、设置虚拟机网关
+	点击导航栏上面的【编辑】-->【虚拟网络编辑器】，并以【管理员】的身份打开虚拟机。
+	点击【NAT模式】，取消使用本地使用本地dhcp服务，配置网络段（子网ip段）为192.168.200.0，点击NAT设置。
+ 	配置【网关ip】，注意【网关ip】需要在【子网ip】段下，这里设置为192.168.200.2
+	2.配置虚拟机静态ip
+	打开命令行，输入【vim /etc/sysconfig/network-scripts/ifcfg-ens33 】，并修改配置文件内容。
+	修改点1：
+	BOOTPROTO="dhcp" 改为 BOOTPROTO="static"
+	修改点2：配置静态ip（向下空白处添加，需要和之前填写ip对应）
+	#ip
+	IPADDR=192.168.200.200
+	NETMASK=255.255.255.0
+	#gateway
+	GATEWAY=192.168.200.2
+	#dns
+	DNS1=192.168.200.2
+	重启网络服务。【service network restart】
+	3、检测是否配置成功
+	ping www.baidu.com 网络通畅，配置完成
+	一个比较偏的错误的解决方法（虚拟网络编辑器有问题）：https://blog.csdn.net/nathan8/article/details/105441646
